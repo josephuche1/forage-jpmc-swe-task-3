@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table } from '@finos/perspective';
+import { Table, TableData } from '@finos/perspective';
 import { ServerRespond } from './DataStreamer';
 import { DataManipulator } from './DataManipulator';
 import './Graph.css';
@@ -50,7 +50,7 @@ class Graph extends Component<IProps, {}> {
         timestamp: 'distinct count',
         upper_bound: 'avg',
         lower_bound: 'avg',
-        trigger_alert: 'avg';
+        trigger_alert: 'avg',
       }));
     }
   }
